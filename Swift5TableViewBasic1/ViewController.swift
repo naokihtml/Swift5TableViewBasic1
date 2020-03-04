@@ -16,6 +16,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     @IBOutlet weak var tableView: UITableView!
     
+    var textArray = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
@@ -42,6 +44,15 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return view.frame.size.height/6
+   }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        textArray.append(textField.text!)
+        textField.resignFirstResponder()
+        textField.text = ""
+        tableView.reloadData()
+        
+        //return true
     }
 }
 
