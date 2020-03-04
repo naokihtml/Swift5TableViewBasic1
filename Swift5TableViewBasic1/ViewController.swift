@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
 
     
-    @IBOutlet weak var textField: UIImageView!
+
+    @IBOutlet weak var textField: UITextField!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,15 +21,27 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
        
         tableView.delegate = self
         tableView.dataSource = self
+        textField.delegate = self
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-           <#code#>
+           return 1
        }
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+        
+    }
 
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-           <#code#>
-       }
+           
+    return cell
+    }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        <#code#>
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return view.frame.size.height/6
+    }
 }
 

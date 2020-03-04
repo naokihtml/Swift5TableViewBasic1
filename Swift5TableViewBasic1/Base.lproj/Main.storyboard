@@ -50,7 +50,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="fb3-BE-4tI" id="drU-WE-sUd"/>
-                        <outlet property="textField" destination="LZF-cF-8L8" id="PBY-N6-LsQ"/>
+                        <outlet property="textField" destination="PYD-10-2Br" id="NS1-kr-x0Y"/>
                         <segue destination="U4r-fP-DLv" kind="show" identifier="next" id="YMa-Lg-Jwy"/>
                     </connections>
                 </viewController>
