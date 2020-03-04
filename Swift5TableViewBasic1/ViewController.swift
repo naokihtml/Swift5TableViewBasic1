@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
 
+    
+    @IBOutlet weak var textField: UIImageView!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,13 +22,13 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         tableView.dataSource = self
     }
 
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//           <#code#>
-//       }
-//
-//       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//           <#code#>
-//       }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+           <#code#>
+       }
+
+       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+           <#code#>
+       }
     
 }
 

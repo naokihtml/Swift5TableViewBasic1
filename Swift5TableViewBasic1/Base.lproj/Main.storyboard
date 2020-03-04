@@ -50,6 +50,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="fb3-BE-4tI" id="drU-WE-sUd"/>
+                        <outlet property="textField" destination="LZF-cF-8L8" id="PBY-N6-LsQ"/>
                         <segue destination="U4r-fP-DLv" kind="show" identifier="next" id="YMa-Lg-Jwy"/>
                     </connections>
                 </viewController>
@@ -64,14 +65,33 @@
                     <view key="view" contentMode="scaleToFill" id="rOd-Re-szd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="本日のTodo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eu4-3k-qi8">
+                                <rect key="frame" x="102" y="155" width="210" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YJy-vm-XNI">
+                                <rect key="frame" x="102" y="261" width="210" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="o03-f9-5g1"/>
                     </view>
                     <navigationItem key="navigationItem" id="dAy-Qj-dbg"/>
+                    <connections>
+                        <outlet property="todoLabel" destination="YJy-vm-XNI" id="QNb-22-kNR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vHt-ky-2V1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1845" y="123"/>
+            <point key="canvasLocation" x="1844.9275362318842" y="122.54464285714285"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="PvJ-BC-FFI">
