@@ -35,12 +35,16 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     }
 
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: <#T##IndexPath#>)
            
+        cell.textLabel?.text = textArray[indexPath.row]
+        cell.imageView!.image = UIImage(named: "checkImage")
     return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return view.frame.size.height/6
