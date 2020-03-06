@@ -11,7 +11,6 @@ import UIKit
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,UITextFieldDelegate{
 
     
-
     @IBOutlet weak var textField: UITextField!
     
     @IBOutlet weak var tableView: UITableView!
@@ -36,11 +35,16 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+       
+        
+        
+        
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: <#T##IndexPath#>)
            
-        cell.textLabel?.text = textArray[indexPath.row]
-        cell.imageView!.image = UIImage(named: "checkImage")
-    return cell
+         cell.textLabel?.text = textArray[indexPath.row]
+         cell.imageView!.image = UIImage(named: "checkImage")
+         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -56,7 +60,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         textField.text = ""
         tableView.reloadData()
         
-        //return true
+        return true
     }
 }
 
