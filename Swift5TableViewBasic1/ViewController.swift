@@ -40,7 +40,7 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         
         
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: <#T##IndexPath#>)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
            
          cell.textLabel?.text = textArray[indexPath.row]
          cell.imageView!.image = UIImage(named: "checkImage")
