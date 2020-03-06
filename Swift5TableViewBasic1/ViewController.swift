@@ -47,8 +47,17 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
          return cell
     }
     
+    
+    
+    
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+       
+        //タップした時にその配列の番号の中身を取り出して、値を渡す
+        let nextVC = storyboard?.instantiateViewController(identifier: "next") as! NextViewController
+     
+        nextVC.toDoString = textArray[indexPath.row]
+        navigationController?.pushViewController(nextVC, animated: true)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return view.frame.size.height/6
