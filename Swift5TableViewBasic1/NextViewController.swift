@@ -18,11 +18,20 @@ class NextViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+      
+        
         todoLabel.text = toDoString
         
     }
     
-
+    override func viewWillAppear(_ animated: Bool) {
+           super.viewWillAppear(animated)
+           
+           navigationController?.isNavigationBarHidden = false
+           
+       }
+    
+    
     /*
     // MARK: - Navigation
 
