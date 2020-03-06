@@ -56,7 +56,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
        
         //タップした時にその配列の番号の中身を取り出して、値を渡す
         let nextVC = storyboard?.instantiateViewController(identifier: "next") as! NextViewController
-     
         nextVC.toDoString = textArray[indexPath.row]
         navigationController?.pushViewController(nextVC, animated: true)
     }
